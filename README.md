@@ -2,7 +2,8 @@
 A repository for a web-based work scheduler for your 9-5.
 
 ## About this Repository
-This repository is a part of the coursework for the Monash University Web Development Bootcamp, this is the Week 2 challenge for the course. The objectives for this project were as follows:
+This repository is a repository for a web-based work scheduler for your 9-5, it is the week 5 challenge for the Monash University Bootcamp.
+<!--
 * **When the user clicks the generate password button, they are prompted by the webpage with password criteria.**
 * **The user is able to select the criteria they desire for the password.**
 * **When the user is prompted for the length of the password they must chose a length of at least 8 characters and no more than 128 characters.**
@@ -18,7 +19,8 @@ The project is designed to provide the user with a random password based on the 
 
 ## Mock-Up
 Below is an image of the deployed application:
-![Deployed password generator application](./assets/images/password-generator.png)
+<!-- ![Deployed password generator application](./assets/images/password-generator.png)
 
 ## Deployment
-This application has been deployed and can be viewed [here](https://jakebjackson.github.io/JS-Password-Generator/).
+This application has not yet been deployed [here](./index.html).
+-->

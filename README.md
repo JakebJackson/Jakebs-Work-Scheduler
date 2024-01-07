@@ -20,5 +20,5 @@ Below is an image of the deployed application (The mockup is missing the date an
 ![Deployed Work Scheduler application](./assets/images/work-scheduler-screenshot.png)
 
 ## Deployment
-This application has been deployed [here](https://jakebjackson.github.io/Jakebs-Work-Scheduler/)https://jakebjackson.github.io/Jakebs-Work-Scheduler/).
+This application has been deployed [here](https://jakebjackson.github.io/Jakebs-Work-Scheduler/).
 

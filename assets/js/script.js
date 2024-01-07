@@ -2,27 +2,23 @@
 var currentHour;
 var userText = ['', '', '', '', '', '', '', '', ''];
 
-
 $(function () {
   // Variables that needed to be declared after the page has loaded.
   var storedUserText = JSON.parse(localStorage.getItem('storedUserText'))
+
+  for(i = 9; i <= 17; i++) {
+    window['hour' + i] = $('#hour-' + i);
+  }
 
   // Checks to see if the user has previously stored Work Day information
   if (storedUserText !== null) {
     // This for loop is used to dynamically create global variables for the div ids in HTML as well as set the text of the page to what the user previously had stored.
     for(i = 9; i <= 17; i++) {
-      window['hour' + i] = $('#hour-' + i);
       $('#hour-' + i).children('textarea').text(storedUserText[i - 9]);
     }
     // Sets the userText variable to what was stored in the users browser.
     userText = storedUserText;
-    // If the user has no stored data the application keeps user text as blank and only creates the variables.
-  } else {
-    for(i = 9; i <= 17; i++) {
-      window['hour' + i] = $('#hour-' + i);
-    }
   }
-
   // Clock function to display and keep track of current user system time.
   function clock() {
     headerClock = setInterval(function () {
@@ -74,13 +70,6 @@ $(function () {
   
   // Calls clock function.
   clock();
-
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
 
   // The following functions create event listeners for each hour button.
   hour9.children('button').on('click', function() {

@@ -2,25 +2,23 @@
 A repository for a web-based work scheduler for your 9-5.
 
 ## About this Repository
-This repository is a repository for a web-based work scheduler for your 9-5, it is the week 5 challenge for the Monash University Bootcamp.
-<!--
-* **When the user clicks the generate password button, they are prompted by the webpage with password criteria.**
-* **The user is able to select the criteria they desire for the password.**
-* **When the user is prompted for the length of the password they must chose a length of at least 8 characters and no more than 128 characters.**
-* **When the user is asked for the type of character to include, they are able to chose lowercase, uppercase, numeric and/or special characters.**
-* **When the user chooses their prompts the prompts should be validated and at least one character type should be selected.**
-* **Once the user has completed these steps the password should be generated and displayed on the webpage.**
+This repository is a repository for a web-based work scheduler for a 9-5 work day, it is the week 5 challenge for the Monash University Bootcamp.
+* **When the user opens the planner they are shown the current date and time in the header.**
+* **The user is able to see the timeblocks for the day and each time block is colour coded to show whether the associated hour is in the past (grey), present (red) or future (green).**
+* **When the user clicks inside the timeblock they are able to input text.**
+* **When the user clicks the save button for that timeblock the input is saved to the users' local storage.**
+* **When the user refreshes the page, the user' prior schedule is pulled from local storage and displayed exactly as the user left it.**
 
 ## Challenges
-The most challenging part of creating this project was wrapping my head around and understanding the necessary steps for the logic required validate and incorporate the criteria that the user has selected. In particular I found creating a way to ONLY select the characters that the user had specified was very hard to realise in my code, once I did figure out how to do so, it was actually fairly simple and straightforward. The second thing I found difficult was also something very simple, I couldn't figure out how to convert Math.random() into a whole number and make it within a certain range. I'm used to C# where doing the exact same thing is as simple as Math.random(0-intName). Once I figured it out it was incredibly simple but not having that functionality as part of the random() function was very weird to me at first. I majority of what I learnt was just minimising the code, a lot of the end product was consolidated from the way I originally did and intended to do things when I started, I also learnt how to use unicode and the rest was mostly consolidating or reiterating things I had learnt in the past few weeks.
+The main challenge I faced in this project was actually something remarkably simple in hind sight, I really struggled to figure out a way to select specific division that the button click event originated in, in the end I opted to hard code each button with it's own event listener until I finished the rest of the project. Other than that I found this far easier than the [Questionnaire challenge](https://jakebjackson.github.io/Jakebs-Web-Questionnaire/) from last week and really enjoyed making it.
 
 ## About the project
-The project is designed to provide the user with a random password based on the criteria the user has selected, the options are; password length, and wether or not to include uppercase, lowercase, numbers and special characters in the password. Once the user has selected an acceptable length and at least one character type the web page will generate a password based on this criteria and display it to the user.
+The project is a scheduler for a typical work day (9am-5pm) and aims to utilise localstorage to keep the users inputs and redisplay them upon revisit, while also using DayJS to update the website in real-time.
 
 ## Mock-Up
-Below is an image of the deployed application:
-<!-- ![Deployed password generator application](./assets/images/password-generator.png)
+Below is an image of the deployed application (The mockup is missing the date and time as I adjusted the webpage for the screenshot):
+![Deployed Work Scheduler application](./assets/images/work-scheduler-screenshot.png)
 
 ## Deployment
-This application has not yet been deployed [here](./index.html).
--->
+This application has been deployed [here](https://jakebjackson.github.io/Jakebs-Work-Scheduler/)https://jakebjackson.github.io/Jakebs-Work-Scheduler/).
+
